@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 40 30% 96%;
+    --foreground: 340 50% 25%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 340 50% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 50% 25%;
+
+    --primary: 330 81% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 330 81% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 330 100% 95%;
+    --accent-foreground: 330 81% 60%;
+
+    --muted: 330 100% 95%;
+    --muted-foreground: 330 81% 60%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 30% 90%;
+    --input: 330 30% 90%;
+    --ring: 330 81% 60%;
+
+    --radius: 1rem;
+
+    --gradient-header: linear-gradient(90deg, #EC4899 0%, #F97316 50%, #FCD34D 100%);
+    --gradient-primary: linear-gradient(135deg, #EC4899, #D946EF);
+    --shadow-soft: 0 4px 12px rgba(236, 72, 153, 0.15);
+    --shadow-medium: 0 8px 24px rgba(236, 72, 153, 0.2);
+  }
+
+  .dark {
+    --background: 20 15% 10%;
+    --foreground: 330 100% 80%;
+
+    --card: 20 15% 15%;
+    --card-foreground: 330 100% 80%;
+
+    --popover: 20 15% 15%;
+    --popover-foreground: 330 100% 80%;
+
+    --primary: 330 81% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 330 81% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 330 100% 20%;
+    --accent-foreground: 330 81% 60%;
+
+    --muted: 330 30% 20%;
+    --muted-foreground: 330 81% 60%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 20% 25%;
+    --input: 330 20% 25%;
+    --ring: 330 81% 60%;
+
+    --gradient-header: linear-gradient(90deg, #EC4899 0%, #F97316 50%, #FCD34D 100%);
+    --gradient-primary: linear-gradient(135deg, #EC4899, #D946EF);
+    --shadow-soft: 0 4px 12px rgba(236, 72, 153, 0.25);
+    --shadow-medium: 0 8px 24px rgba(236, 72, 153, 0.35);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

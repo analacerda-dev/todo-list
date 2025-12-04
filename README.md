@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# Planejador Semanal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um planejador semanal moderno e minimalista, desenvolvido com **React, TypeScript, TailwindCSS e Framer Motion**.
 
-Currently, two official plugins are available:
+---
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Interface com sidebar dos dias da semana, animações suaves, modo claro/escuro e organização de tarefas por dia.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Adicionar tarefas por dia da semana
+- Filtros: **Todos**, **Pendentes**, **Completos**
+- Marcar tarefas como concluídas
+- Excluir tarefas
+- Salvamento automático via **LocalStorage**
+- Interface responsiva
+- Animações com Framer Motion
+- Modo Claro/Escuro
+- Estatísticas gerais
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Tecnologias Utilizadas
+
+- React + Vite
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- LocalStorage
+- Lucide React (ícones)
+
+---
+
+## ▶ Como executar o projeto
+
+1. **Clone o repositório:**
+```bash
+git clone https://github.com/analacerda-dev/planejador-semanal.git
+```
+2. **Entre na pasta do projeto:**
+```bash
+cd planejador-semanal
+```
+3. **Instale as dependências:**
+```bash
+npm install
+```
+4. **Execute o servidor de desenvolvimento:**
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
+## Objetivo do Projeto
+- Criar um sistema simples e organizado de tarefas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Praticar React com TypeScript
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Utilizar animações modernas
+
+- Trabalhar com salvamento de dados local
+
+- Aprimorar o design usando TailwindCSS
+
+---
+# Desenvolvido por Ana Lacerda
+
